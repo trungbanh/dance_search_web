@@ -3,6 +3,9 @@
 }
 
 .icon-ot {
+    margin: auto;
+    padding: auto;
+    color: #87c6f3;
     background-color: brown; width: 40px; height: 40px; 
 }
 
@@ -12,6 +15,33 @@
 
 .jbt-slogan-ot {
     -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: rgb(187, 197, 42); 
-    -webkit-text-fill-color: rgb(146, 36, 36);
+    -webkit-text-stroke-color: rgb(255, 255, 255); 
+    -webkit-text-fill-color: rgb(255, 0, 0);
+}
+
+.jbt-bg-image {
+    background-position: right;
+    background-color: black;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    background-image: url("image/background.jpg");
+}
+
+.jbt-contend-ot {
+    width: 40%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(141, 141, 141));
+}
+
+.image-ot{
+    width: 100%;
+}
+
+.query-form-select {
+    background-color: rgb(245, 245, 245);
+    margin-top: 5px;
+    padding-bottom: 5px; 
+}
+
+.query-form-post {
+    padding: 1em;
 }

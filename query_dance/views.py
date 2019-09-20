@@ -6,8 +6,7 @@ import json
 
 
 def index(request):
-    return render(request, 'query_dance/test.html' )
+    return render(request, 'query_dance/index.html')
 
-def dances(request,nameofdance):
-    context = {'nameofdance':nameofdance}
-    return render(request, 'query_dance/test.html',context )
+def query(request):
+    return render(request, 'query_dance/query.html')
