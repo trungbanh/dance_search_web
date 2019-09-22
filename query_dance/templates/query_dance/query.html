@@ -11,39 +11,106 @@
 {% block body %} 
 {% include 'header.html' %}
 <div class="body">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 query-form-select">
-                    <!-- phần đổ dữ liệu vào -->
-                    <div class="col-6"> 
-                        <h3>
-                            động tác tay 
-                        </h3>
+    <div class="container">
+        <div class="row query-form-select ">
+            <div class="col-12 row ">
+                <!-- phần đổ dữ liệu vào -->
+                <div class="col-6"> 
+                    <form action="" id="body">
+                        <h3>động tác người </h3>
                         <div class="list-group">
-                            <button type="button" class="list-group-item list-group-item-action ">
-                                Cras justo odio
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">
-                                Dapibus ac facilisis in
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">
-                                Morbi leo risus
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">
-                                Porta ac consectetur ac
-                            </button>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-pray" value="Body_Pray" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-pray"> Body_Pray </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-hands-in-right-hip" value="Body_Hands_in_Right_Hip" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-hands-in-right-hip"> Body_Hands_in_Right_Hipt </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-picking-flowers" value="Body_Picking_Flowers" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-picking-flowers" > Body_Picking_Flowers </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-tree-leaf" value="Body_Tree_Leaf" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-tree-leaf" > Body_Tree_Leaf </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-turn-around" value="Body_Turn_Around" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-turn-around" > Body_Turn_Around </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-body" id="q-body-watching-flowers" value="Body_Watching_Flowers" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-body-watching-flowers" > Body_Watching_Flowers </label>
+                            </div>
                         </div>
-                    </div>
+                        {% csrf_token %}
+                    </form>
+                </div>
                     <!-- kết thúc vòng lặp -->
-
                 </div>
                 <div class="input-group mb-3 query-form-post">
-                    <input type="text" class="form-control" placeholder="you want check" aria-label="you want check" aria-describedby="button-addon2">
+                    <p class="form-control" id="q-text" > dòng cần tìm ...</p>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                        <button class="btn btn-outline-primary" type="button" id="btn-check"> Xác Nhận </button>
+                        <button class="btn btn-outline-primary" type="button" id="btn-search"> Tìm kiếm </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready( function(){
+            var body_q = ''
+            $('#btn-check').click( function(){
+                var bodys = document.getElementsByName('q-body');
+                var lenght = bodys.length
+                
+                for (var i = 0; i<lenght; i++ ){
+                    if (bodys[i].checked) {
+                        body_q = bodys[i].value
+                    }
+                }
+                document.getElementById('q-text').innerHTML = body_q
+            })
+
+            $('#btn-search').click( function() {
+                console.log('sfasdfadsfs')
+                $.ajax({
+                    type: "post",
+                    url: 'http://localhost:8000/dance/Apsara',
+                    data: body_q,
+                    success: function(req,res) {
+                        console.log(res)
+                    }
+                });
+            })
+        })
+    </script>
+
 {% endblock %}
+
