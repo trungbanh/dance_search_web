@@ -71,6 +71,76 @@
                         {% csrf_token %}
                     </form>
                 </div>
+                <div class="col-6"> 
+                    <form action="" id="body">
+                        <h3>động tác tay </h3>
+                        <div class="list-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-hand" id="q-hand-pray" value="Body_Pray" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-hand-pray"> Hand_Pray </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-hand" id="q-hand-leaf" value="Hand_Leaf" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-hand-leaf"> Hand_Leaf </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-hand" id="q-hand-fruit" value="Hand_Fruit" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-hand-fruit"> Hand_Fruit </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-hand" id="q-hand-rice" value="Hand_Rice" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-hand-rice"> Hand_Rice </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6"> 
+                    <form action="" id="body">
+                        <h3>động tác chân </h3>
+                        <div class="list-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-foot" id="q-foot-stand-with-all" value="Stand_With_All_Foots" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-foot-stand-with-all"> Stand_With_All_Foots </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-foot" id="q-foot-in-left" value="Stand_In_Left_Foots" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-foot-in-left"> Stand_In_Left_Foot </label>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" name="q-foot" id="q-foot-in-right" value="Stand_In_Right_Foots" >
+                                    </div>
+                                </div>
+                                <label class="form-control" for="q-foot-in-right"> Stand_In_Right_Foot </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                     <!-- kết thúc vòng lặp -->
                 </div>
                 <div class="input-group mb-3 query-form-post">
@@ -85,17 +155,38 @@
     </div>
     <script>
         $(document).ready( function(){
-            var body_q = ''
+            var query_data = {
+                'body':'',
+                'hand':'',
+                'foot':''
+            }
             $('#btn-check').click( function(){
                 var bodys = document.getElementsByName('q-body');
-                var lenght = bodys.length
+                var lenght_b = bodys.length
                 
-                for (var i = 0; i<lenght; i++ ){
-                    if (bodys[i].checked) {
-                        body_q = bodys[i].value
+                for (var i_b = 0; i_b<lenght_b; i_b++ ){
+                    if (bodys[i_b].checked) {
+                        query_data.body = bodys[i_b].value
                     }
                 }
-                document.getElementById('q-text').innerHTML = body_q
+                var hands = document.getElementsByName('q-hand');
+                var lenght_h = hands.length
+                
+                for (var i_h = 0; i_h<lenght_h; i_h++ ){
+                    if (hands[i_h].checked) {
+
+                        query_data.hand = hands[i_h].value
+                    }
+                }
+                var foots = document.getElementsByName('q-foot');
+                var lenght_f = foots.length
+                
+                for (var i_f = 0; i_f<lenght_f; i_f++ ){
+                    if (foots[i_f].checked) {
+                        query_data.hand = foots[i_f].value
+                    }
+                }
+                document.getElementById('q-text').innerHTML = query_data.body + " "+ query_data.hand +" "+ query_data.foot
             })
 
             $('#btn-search').click( function() {
@@ -103,7 +194,7 @@
                 $.ajax({
                     type: "post",
                     url: 'http://localhost:8000/dance/Apsara',
-                    data: body_q,
+                    data: query_data,
                     success: function(req,res) {
                         console.log(res)
                     }

@@ -12,7 +12,10 @@ def index(request):
 
 @csrf_exempt 
 def query(request):
-    print (request.method)
+    # print (request.method)
     if (request.method == 'POST'):
         print(request.POST)
+        print(request.POST['body'])
+        print(request.POST['hand'])
+
     return render(request, 'query_dance/query.html')

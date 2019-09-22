@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#"
+     xml:base="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Apsara_v3="http://www.semanticweb.org/dr-trange/ontologies/2019/8/untitled-ontology-48#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasBodyPosture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasBodyPosture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasFootsPosture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasFootsPosture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandLeftPosture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandLeftPosture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandRightPosture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandRightPosture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandsPosture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#hasHandsPosture">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#isApsara -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#isApsara">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Dance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyHandsinRightHip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyHandsinRightHip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPickingFlowers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPickingFlowers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Posture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTreeLeaf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTreeLeaf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTurnAround -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTurnAround">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyWatchingFlowers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyWatchingFlowers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Dance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Dance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Posture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandFruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandFruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandLeaf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandLeaf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandPray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandPray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandRice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandRice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandsPosture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Posture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Posture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Posture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInLeftFoot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInLeftFoot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInRightFoot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInRightFoot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandWithAllFoots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandWithAllFoots">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#FootsPosture"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Hands_in_Right_Hip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Hands_in_Right_Hip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyHandsinRightHip"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPickingFlowers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Pray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Pray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyPray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Tree_Leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Tree_Leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTreeLeaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Turn_Around -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Turn_Around">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyTurnAround"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Watching_Flowers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Watching_Flowers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#BodyWatchingFlowers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Fruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandFruit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandLeaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandPray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#HandRice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_In_Left_Foots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_In_Left_Foots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInLeftFoot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_In_Right_Foots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_In_Right_Foots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandInRightFoot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#StandWithAllFoots"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8475 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8475">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+        <hasHandRightPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8478 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8478">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8481 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8481">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Hands_in_Right_Hip"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray"/>
+        <hasHandRightPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8484 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8484">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8487 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8487">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8490 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8490">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8493 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8493">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Pray"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8496 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8496">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8499 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8499">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8502 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8502">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8505 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8505">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8508 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8508">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8511 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8511">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8514 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8514">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8517 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#apsara_8517">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Apsara"/>
+        <hasBodyPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Body_Picking_Flowers"/>
+        <hasFootsPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Stand_With_All_Foots"/>
+        <hasHandLeftPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Pray"/>
+        <hasHandRightPosture rdf:resource="http://www.semanticweb.org/dr-trange/ontologies/2019/8/Apsara_v3.owl#Hand_Leaf"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

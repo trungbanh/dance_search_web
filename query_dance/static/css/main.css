@@ -45,3 +45,10 @@
 .query-form-post {
     padding: 1em;
 }
+
+label.form-control {
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+
+}
