@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery="slim" %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+    <title>Trung cv</title>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <span class="row">
+                <div   class="col-sm-12 col-md-3">
+                    <img class=" rounded float-left" src="{% static 'image/avata.jpeg' %}" width="175" height="175" />
+                </div>
+
+                <div class="col-sm-12 col-md-9" >
+                    <h1 class="display-5">
+                        My name is <strong style="color: rgb(19, 85, 185)">Banh Phuoc Trung</strong>
+                    </h1>
+                    <h3 class="lead-3">
+                        Machine Learning Engineer / Computer Vision Engineer
+                    </h3>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-white bg-info">About me </h2>
+                <p>
+                    <h3>Full name <i class="material-icons">
+                        accessibility_new</i>:
+                    Banh Phuoc Trung </h3>
+                </p>
+                <div>
+                    <h3>Birthday <i class="material-icons"> child_care </i>: 09/11/1997 </h3>
+                </div>
+                <p>
+                    <h3 >Contact me on: <a id="linktofb" href="mailto:trungbanh97@gmail.com">trungbanh97@gmail.com</a></h3>
+                </p>
+                <p>
+                    <h3>Github: <a href="https://github.com/trungbanh" > https://github.com/trungbanh </a> </h3>
+                </p>
+            </div>
+            <div class="col-6">
+                <h2 class="text-white bg-info">Specialize </h2>
+                <h4 class="bg-secondary text-white">Image Processing </h4>
+                <p>
+                    image processing with OpenCV (Python) can usable for personal goals
+                </p> 
+                <h4 class="bg-secondary text-white">Machine Learning/Deep Learning </h4>
+                <p>
+                    can use sklearn, Keras. Understand KNN, KMean, SVM, CNNs (Deep Learning) used in school-level research.
+                </p> 
+                <h4 class="bg-secondary text-white">Computer Vision </h4>
+                <p>
+                    Understand methods and algorithms used in school-level research
+                </p> 
+            </div>
+            <div class="col-7 ">
+                <h2 class="text-white bg-info">Skills</h2>
+                    <h3> 
+                        <img  src="template/python.png" style="width:40px;height:40px; "> 
+                        Python
+                    </h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <p>
+                        Started learned python since  2016 to now  </br>
+                        Can use Flask and Django (web framework) in simple with restful api </br>
+                        Using Machine Learning, Deep learning, Image Proccessing, Computer Vision.
+                    </p>
+                    <h3> 
+                        <img  src="{% static 'image/c.png' %}" style="width:40px;height:40px; "> 
+                        C/C++
+                    </h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                    <p>
+                        Good completion of school assignments, can help questions in communities
+                    </p>
+
+                    <h3> 
+                        <img  src="{% static 'image/linux.png' %}" style="width:40px;height:40px; "> 
+                        Linux using 
+                    </h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <p>
+                        started used Ubuntu since July 2017                
+                    </p>
+                    <h3> 
+                        <img  src="{% static 'image/js.png' %}" style="width:40px;height:40px; "> 
+                        Node.js  
+                    </h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <p> 
+                        can read and understand code functions, can create smalls web application with library (express). 
+                    </p>
+
+                    <h3> 
+                        <img  src="{% static 'image/github_circle_color-512.png' %}" style="width:40px;height:40px; "> 
+                        Git   
+                    </h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <p> 
+                        use git in terminal, understand flow of git, pull request, branch, merge code.
+                    </p>
+                
+            </div>
+            <div class="col-5">
+                <h2 class="text-white bg-info">Education</h2>
+                <p>
+                    Student of Can Tho University (CTU) </br>
+                    Major in Computer Science 
+                </p>
+
+                <h2 class="text-white bg-info" >Language </h2>
+                <h3>English </h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <p>
+                    i can understand almost articles, posts related to expertise,
+                    can heard and speak in daily communication.
+                </p>
+
+                <h2 class="text-white bg-info">Experience</h2>
+                <p>- 2017 join class "Android application development", join the hackathon contest on Android, learn Git start to use Github </p>
+                <p>- 2018 learn nodejs become member of Fossasia in CanTho city </p>
+                <p>- 5/2018 attend hackathon AWS in Saigon city</p>
+                <p>- 10/2018 first project with CNNs Keras to classification signature </p>
+                <p>- 3/2019 coding for core of an application on rasberry pi 3+ with micro python</p>
+                <p>- 5/2019 release and maintain <b>newsfx</b> a crawler tools </p>
+                <p>- 5/2019 learn to build augmented reality software </p>
+                <p>- 6/2019 internship 2 month at <i>ninepoints Ltd Co</i> </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

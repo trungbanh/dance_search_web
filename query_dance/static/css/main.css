@@ -19,14 +19,6 @@
     -webkit-text-fill-color: rgb(255, 0, 0);
 }
 
-.jbt-bg-image {
-    background-position: right;
-    background-color: black;
-    background-size: 60% 100%;
-    background-repeat: no-repeat;
-    background-image: url("image/background.jpg");
-}
-
 .jbt-contend-ot {
     width: 40%;
     background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(141, 141, 141));
@@ -50,5 +42,12 @@ label.form-control {
     white-space: nowrap;
     text-overflow: ellipsis; 
     overflow: hidden;
+}
 
+.jbt-bg-image {
+    background-position: right;
+    background-size: 60% 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url("../image/background.jpg");
 }

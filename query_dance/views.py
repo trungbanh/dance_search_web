@@ -8,7 +8,10 @@ import asyncio
 from .query.test_query import SparqlQueries 
 
 def index(request):
-    return render(request, 'query_dance/index.html',{'test':123456})
+    return render(request, 'query_dance/index.html')
+
+def me(request):
+    return render(request, 'about_me.html')
 
 @csrf_exempt 
 def query(request):
@@ -19,7 +22,9 @@ def query(request):
         query_dict = dict(request.POST)
         # print (query_dict)
         apsaras = anotation_query_string(query_dict)
-        context = apsaras
+        context = int(apsaras[0].split('_')[1])/180
+        context = int(context)
+        print(context)
         return HttpResponse(context)
 
     return render(request, 'query_dance/query.html')

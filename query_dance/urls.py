@@ -6,5 +6,5 @@ app_name = 'query_dance'
 urlpatterns = [
     path('',views.index,name = 'index'),
     path('Apsara',views.query,name = 'Apsara'),
-    
+    path('AboutMe',views.me,name = 'About'),
 ]

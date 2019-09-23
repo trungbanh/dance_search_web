@@ -40,11 +40,11 @@ $(document).ready( function(){
             type: "post",
             url: '/Apsara',
             data: query_data,
-            success: function(req,res) {
-                console.log(res)
+            success: function(res,req) {
                 console.log(req)
-                alert()
+                console.log(res)
 
+                $("#video").attr('src',"static/videos/cut"+res+".mp4" )
             }
         });
     })
