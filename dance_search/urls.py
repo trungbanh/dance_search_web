@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('dance/',include('query_dance.urls')),
+    path('',include('query_dance.urls')),
     path('admin/', admin.site.urls),
 ]
