@@ -5,6 +5,8 @@ $(document).ready( function(){
         'foot':''
     }
     $('#btn-check').click( function(){
+        // click button it will get data from form 
+        // to set value to string post
         var bodys = document.getElementsByName('q-body');
         var lenght_b = bodys.length
         
@@ -41,10 +43,15 @@ $(document).ready( function(){
             url: '/Apsara',
             data: query_data,
             success: function(res,req) {
-                console.log(req)
-                console.log(res)
-
-                $("#video").attr('src',"static/videos/cut"+res+".mp4" )
+                if (res == 0) {
+                    // if response = 0 mean not found 
+                    $("#video").attr('type',"image/jpg" )
+                    $("#video").attr('src',"static/videos/404re.jpg" )
+                } else {
+                    $("#video").attr('type',"video/mp4" )
+                    $("#video").attr('src',"static/videos/cut"+res+".mp4" )
+                }
+                
             }
         });
     })

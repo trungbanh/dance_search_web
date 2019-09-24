@@ -2,10 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
-import asyncio
+import random 
 
 
 from .query.test_query import SparqlQueries 
+
 
 def index(request):
     return render(request, 'query_dance/index.html')
@@ -15,16 +16,20 @@ def me(request):
 
 @csrf_exempt 
 def query(request):
-
     context = dict()
     if (request.method == 'POST'):
 
         query_dict = dict(request.POST)
-        # print (query_dict)
         apsaras = anotation_query_string(query_dict)
-        context = int(apsaras[0].split('_')[1])/180
+        if apsaras == [] :
+            # if not found return 00 
+            return HttpResponse('00')
+
+        # 34fps and 5s for a video
+        print(apsaras)
+        ran = random.randint(1,int(len(apsaras)/2))
+        context = int(apsaras[ran].split('_')[1])/170
         context = int(context)
-        print(context)
         return HttpResponse(context)
 
     return render(request, 'query_dance/query.html')
