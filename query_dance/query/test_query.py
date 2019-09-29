@@ -1,7 +1,23 @@
 from owlready2 import World, sync_reasoner
 
 
-class SparqlQueries:
+class SingletonSparkQL:
+    _instance = None
+
+    def __init__(self):
+        """ Virtually private constructor. """
+        if SingletonSparkQL._instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            SingletonSparkQL._instance = self
+    @staticmethod
+    def getInstance():
+        """ Static access method. """
+        if SingletonSparkQL._instance == None:
+            SingletonSparkQL._instance = SparqlQueries()
+        return SingletonSparkQL._instance 
+
+class SparqlQueries ():
     def __init__(self):
         my_world = World()
         my_world.get_ontology("query_dance/query/Apsara_v3-1.owl").load() #path to the owl file is given here

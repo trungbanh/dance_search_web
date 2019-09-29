@@ -5,7 +5,7 @@ import json
 import random 
 
 
-from .query.test_query import SparqlQueries 
+from .query.test_query import SingletonSparkQL 
 
 
 def index(request):
@@ -26,7 +26,7 @@ def query(request):
             return HttpResponse('00')
 
         # 34fps and 5s for a video
-        print(apsaras)
+        # print(apsaras)
         ran = random.randint(1,int(len(apsaras)/2))
         context = int(apsaras[ran].split('_')[1])/170
         context = int(context)
@@ -42,7 +42,8 @@ def anotation_query_string (query_dict):
         query = query+'?Apsara Apsara_v3:hasHandRightPosture|Apsara_v3:hasHandLeftPosture Apsara_v3:{}. '.format(query_dict['hand'][0])
     if query_dict['body'] != ['']:
         query = query+'?Apsara Apsara_v3:hasBodyPosture Apsara_v3:{}. '.format(query_dict['body'][0])
-    runQuery = SparqlQueries()
+    runQuery = SingletonSparkQL.getInstance()
+    # print (runQuery)
     apsaras = runQuery.search(query)
 
     return apsaras
