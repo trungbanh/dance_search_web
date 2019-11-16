@@ -18,7 +18,6 @@ def me(request):
 def query(request):
     context = dict()
     if (request.method == 'POST'):
-
         query_dict = dict(request.POST)
         apsaras = anotation_query_string(query_dict)
         if apsaras == [] :
@@ -26,7 +25,6 @@ def query(request):
             return HttpResponse('00')
 
         # 34fps and 5s for a video
-        # print(apsaras)
         ran = random.randint(1,int(len(apsaras)/2))
         context = int(apsaras[ran].split('_')[1])/170
         context = int(context)

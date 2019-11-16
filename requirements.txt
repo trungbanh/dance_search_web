@@ -1,0 +1,16 @@
+cPython            ==0.0.5     
+Cython             ==0.29.14   
+debugtools         ==0.2.0     
+decorator          ==4.4.1     
+defusedxml         ==0.6.0     
+Django             ==2.2.7     
+django-bootstrap4  ==1.0.1        
+importlib-metadata ==0.23 
+isodate            ==0.6.0     
+isort              ==4.3.21    
+jedi               ==0.15.1
+Jinja2             ==2.10.3
+json5              ==0.8.5
+Owlready2          ==0.22
+rdflib             ==4.2.2
+requests           ==2.22.0
