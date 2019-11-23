@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+cpython = "==0.0.5"
+debugtools = "==0.2.0"
+decorator = "==4.4.1"
+defusedxml = "==0.6.0"
+django = "==2.2.7"
+django-bootstrap4 = "==1.0.1"
+importlib-metadata = "==0.23"
+isodate = "==0.6.0"
+isort = "==4.3.21"
+jedi = "==0.15.1"
+jinja2 = "==2.10.3"
+json5 = "==0.8.5"
+rdflib = "==4.2.2"
+requests = "==2.22.0"
+Cython = "==0.29.14"
+Owlready2 = "==0.22"
+
+[requires]
+python_version = "3.6"

@@ -20,7 +20,7 @@ class SingletonSparkQL:
 class SparqlQueries ():
     def __init__(self):
         my_world = World()
-        my_world.get_ontology("query_dance\query\Apsara_v3-1.owl").load() #path to the owl file is given here
+        my_world.get_ontology("./query_dance/query/Apsara_v3-1.owl").load() #path to the owl file is given here
         sync_reasoner(my_world)  #reasoner is started and synchronized here
         self._graph = my_world.as_rdflib_graph()
 
